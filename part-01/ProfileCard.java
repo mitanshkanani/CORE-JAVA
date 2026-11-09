@@ -1,4 +1,4 @@
-public class A1 {
+public class ProfileCard {
     public static void main(String[] args) {
         System.out.println("+----------------------------------+");
         System.out.println("|  NAME   : Mitansh Kanani         |");
