@@ -11,7 +11,6 @@ public class ArgsCalculator {
         double a1 = Double.parseDouble(args[0]);
         double b1 = Double.parseDouble(args[1]);
         System.out.printf("%d / %d = %.2f%n", a, b, a1 / b1);
-        // the integer version printed 3 because i think it uses .floor and rounds down
-        // at less that 3.5 hence 3
+        // so by default it removes the value after the . hence whatever it be even if it be 3.9 it will be 3 because values after the . are removed
     }
 }

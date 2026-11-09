@@ -8,6 +8,6 @@ public class ProfileCard {
         System.out.println("+----------------------------------+");
 
         System.out.println(
-                "+----------------------------------+ \n |  NAME   : Mitansh Kanani         | \n |  ROLE   : Java Trainee           | \n |  CITY   : Mumbai                 | \n |  GOAL   : Master Core Java       | \n +----------------------------------+");
+                "+----------------------------------+ \n|  NAME   : Mitansh Kanani         | \n|  ROLE   : Java Trainee           | \n|  CITY   : Mumbai                 | \n|  GOAL   : Master Core Java       | \n+----------------------------------+");
     }
 }

@@ -11,7 +11,7 @@ public class PredictTheOutput {
         System.out.println(7 % 2);// 1
         System.out.print("A");// AB
         System.out.println("B");// CD E <---- sorry i forgot\n mb
-        System.out.print("C\n");
+        System.out.print("C\n");// d starts on new line because of \n
         System.out.println("D\tE");
     }
 }
