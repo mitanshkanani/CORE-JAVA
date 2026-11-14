@@ -3,8 +3,23 @@ import java.util.Scanner;
 public class GradeCalculator {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-        int marks=sc.nextInt();
-        if(marks>90){
+        int marks=0;
+        System.out.println("Enter marks: ");
+        do{
+            if (sc.hasNextInt()) {
+                int val=sc.nextInt();
+                if(val>=0 && val<=100){
+                    marks=val;
+                    break;
+                }else{
+                    System.out.println("Enter valid marks");
+                }
+            }else{
+                System.out.println("Enter a number "+ sc.next()+" is not a number");
+            }
+        }while(true);
+
+        if(marks>90 && marks<=100){
             System.out.println("Grade:A");
         }else if(marks>75){
             System.out.println("Grade:B");
