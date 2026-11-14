@@ -32,8 +32,21 @@ public class NumberAnalyzer {
             digits_count++;//digits count
             sum+=digit;//total sum
             rev=rev*10+digit;//reverse
-            arm=arm+digit*digit*digit;
             dummy=dummy/10;
+        }
+        int dummy2=num;
+        int temp=digits_count;
+        while (temp>0) {
+            int i=0;
+            int digit_2=dummy2%10;
+            int prod=1;
+            while (i<digits_count) {
+                prod*=digit_2;
+                i++;
+            }
+            arm+=prod;
+            dummy2=dummy2/10;
+            temp--;
         }
         System.out.println("Digits: "+digits_count);
         System.out.println("Digit sum: "+sum);
