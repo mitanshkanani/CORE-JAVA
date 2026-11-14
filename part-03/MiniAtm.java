@@ -17,7 +17,7 @@ public class MiniAtm {
                 switch (choice) {
                     case 1:
                         System.out.println("Your Balance is:"+balance);
-                        trans++;
+                        
                         break;
                     case 2:
                         System.out.println("Enter Deposite Amount:");
@@ -39,8 +39,14 @@ public class MiniAtm {
                                     break;
                                 }else{
                                     if (value%100==0) {
-                                        balance-=value;
+                                        if (value>0) {
+                                            balance-=value;
                                         trans++;
+                                        }else{
+                                            System.out.println("Enter +ve");
+                                            break;
+                                        }
+                                        
                                     }else{
                                         System.out.println("Enter multiple of 100 to withdraw");
                                         break;
