@@ -29,7 +29,7 @@ public class CastingLab {
         int x1=(int)3e9;
         int x2=(int)2_147_483_648L;
         System.out.println(x1);
-        System.out.println(x2);
+        System.out.println(x2);// idk y both give different answer x2 and x2 you did ask in pdf write i dont know that ig its because of the 2's complement and all ?
         byte byte3=(byte)(100+100);
         System.out.println(byte3);
         char c4='a'+1;
