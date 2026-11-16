@@ -7,7 +7,7 @@ public class TemperatureConverter {
         double Kelvin =celsius+273.15;
         System.out.println("Kelvin: "+Kelvin);
         
-        int cel=Integer.parseInt(args[0]);
+        int cel=(int)celsius;
         int F=9/5*cel+32;//9/5 becomes 1 and 1*37= 37 and 37+32=69 
         System.out.println("BUG: "+F);
     }
